@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Tasnim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container" id="page1">
+        <div class="content">
+            <h1 class="title">Welcome baby😘</h1>
+            <button id="goAheadBtn" class="btn">Go Ahed</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="page2">
+        <div class="content">
+            <h1 class="title-bangla">Ooo আমার বেস্ট ফ্রেন্ড আমার Pretty Little baby 🥹💟 I love you soooooooo Much😭🏹</h1>
+        </div>
+    </div>
+
+    <div class="container hidden" id="page3">
+        <div class="content">
+            <h1 class="title-bangla animate-charcter">তোর জন্য আমার মনের সকল কথা জানতে চাইলে নিচে ক্লিক কর</h1>
+            <button id="loveYouTooBtn" class="btn">I love you too</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="mainPage">
+        <div class="content">
+            <h1 id="message" class="title-bangla"></h1>
+            <button id="nextBtn" class="btn"></button>
+            <div id="proposalSection" class="hidden">
+                <p class="title-bangla">তুই কি বিয়ে করবি তখন???😭</p>
+                <button class="btn choice-btn">হ্যাঁ করব</button>
+                <button class="btn choice-btn">তুই না করলেও আমি করবো</button>
+                <button class="btn choice-btn">তোকে জোর করে করবো</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container hidden" id="congratsPage">
+        <div class="content">
+            <h1 class="title-bangla congratulations">Congratulations 🎉</h1>
+            <p>এগ্রিমেন্ট এ রাজি থাকলে নিচে স্বাক্ষর কর!</p>
+            <canvas id="signature-pad" width="400" height="200"></canvas>
+            <button id="saveSignatureBtn" class="btn">Done</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="theEndPage">
+        <div class="content">
+            <h1 class="title-bangla">The End</h1>
+        </div>
+    </div>
+
+    <div class="hearts">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.0/dist/signature_pad.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
