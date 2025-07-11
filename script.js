@@ -1,4 +1,4 @@
-Document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() { // 'Document' থেকে 'document' করা হয়েছে
 
     // Page Elements
     const pages = {
@@ -97,6 +97,13 @@ Document.addEventListener('DOMContentLoaded', function() {
 
     // --- Signature Pad Logic ---
     const canvas = document.getElementById('signature-pad');
+    // নিশ্চিত করুন যে SignaturePad লাইব্রেরি লোড হয়েছে
+    if (typeof SignaturePad === 'undefined') {
+        console.error("SignaturePad library is not loaded. Please include it in your HTML.");
+        // এখানে আপনি একটি ফলব্যাক বা ইউজারকে বার্তা দেখাতে পারেন
+        alert("স্বাক্ষর প্যাড লোড হতে পারেনি। অনুগ্রহ করে পেজটি রিফ্রেশ করুন অথবা আপনার ওয়েবসাইটের অ্যাডমিনকে জানান।");
+        return; // লাইব্রেরি না থাকলে আর কোড রান করার দরকার নেই
+    }
     const signaturePad = new SignaturePad(canvas, {
         backgroundColor: 'rgb(255, 255, 255)'
     });
