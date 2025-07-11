@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         showPage('page2');
         setTimeout(() => {
             showPage('page3');
-        }, 10000); // 10 seconds timeout
+        }, 5000); // 10 seconds timeout
     });
 
     buttons.loveYouTooBtn.addEventListener('click', () => {
