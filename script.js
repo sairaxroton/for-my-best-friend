@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (signaturePad.isEmpty()) {
             alert("আগে স্বাক্ষর কর, চালাকি করিস না! 😉");
         } else {
-            showPage('theEndPage');
+            showPage('eibarja amar Ripley de');
         }
     });
 
